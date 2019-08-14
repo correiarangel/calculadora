@@ -61,7 +61,7 @@ export default class App extends Component {
 
       values[1] = 0
       this.setState({
-        displayValue: `${values[0]}`,//displayValue como string para não bug
+        displayValue: `${values[0]}`,//displayValue como string para evitar bug
         operation: equals ? null : operation,
         current: equals ? 0 : 1,
         clearDisplay: true,
