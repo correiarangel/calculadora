@@ -91,9 +91,9 @@ export default class App extends Component {
           <Button label='2' onClick={this.addDigit}/>
           <Button label='3' onClick={this.addDigit}/>
           <Button label='+' operation onClick={this.setOperation}/>
-          <Button label='0' double  onClick={this.addDigit} />
-          <Button label='.' onClick={this.addDigit} />
-          <Button label='=' operation onClick={this.setOperation}/>
+          <Button style={styles.buttonMarg} label='0' double  onClick={this.addDigit} />
+          <Button style={styles.buttonMarg} label='.' onClick={this.addDigit} />
+          <Button style={styles.buttonMarg} label='=' operation onClick={this.setOperation}/>
         </View>
       </View>
     );
@@ -109,4 +109,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap'
   },
+
 });
